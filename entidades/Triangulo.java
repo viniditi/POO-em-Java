@@ -13,7 +13,6 @@ public class Triangulo {//Nome da classe.
            
         double p = (a + b + c) / 2.0;//Corpo do método.
         return Math.sqrt(p * (p - a) * (p - b) * (p - c));
-        
     }
     
 }
