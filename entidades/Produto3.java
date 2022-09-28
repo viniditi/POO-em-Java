@@ -8,6 +8,8 @@ public class Produto3 {
     public double preco;
     public int quantidade;
     
+    //Eu posso adicionar o Construtor de maneira automática clicando nos botões alt + insert.
+    
     //Nota: é possível também incluir um construtor padrão incluindo mais uma sobrecarga.
     public Produto3(){
     }
