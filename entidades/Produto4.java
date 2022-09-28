@@ -17,6 +17,8 @@ public class Produto4 {
         this.preco = preco;
     }
     
+    //Eu posso criar automaticamente os getters e os setters clicando nos botões alt + insert.
+    
     //Por padrão, o encapsulamento é posto após os construtores.
     public void setNome(String nome){
                 //A palavra set, significa que eu posso modificar O atributo que eu desejar no private.
