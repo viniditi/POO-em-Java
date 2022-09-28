@@ -13,7 +13,7 @@ public class Construtor {
         Scanner sc = new Scanner(System.in);
         
                 //Por padrão, os atributos são iniciados "vazios".
-        //Produto2 produto2 = new Produto2();  //Agora que temos um contrutor como argumento, nós colocamos a instanciação após lermos os atibutos.
+        //Produto2 produto2 = new Produto2(); //Agora que temos um contrutor como argumento, nós colocamos a instanciação após lermos os atibutos.
 
         System.out.println("Insira os dados dos produtos:");
         System.out.print("Nome: ");
