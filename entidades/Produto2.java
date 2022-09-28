@@ -6,6 +6,9 @@ public class Produto2 {
     public String nome;
     public double preco;
     public int quantidade;
+    
+    //Eu posso adicionar o Construtor de maneira automática clicando nos botões alt + insert.
+    
            //O construtor te obriga a colocar valores nos atributos, e por padrão, ele é colocado abaixo dos atributos.
     public Produto2(String nome, double preco, int quantidade){
                     //Eu coloco os atributos no construtor para o parâmetro atribui-los nos atributos.
