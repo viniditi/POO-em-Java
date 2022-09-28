@@ -23,7 +23,7 @@ public class Construtor {
         System.out.print("Quantidade em estoque: ");
         int quantidade = sc.nextInt();
         
-        Produto2 produto2 = new Produto2(nome,preco,quantidade);
+        Produto2 produto2 = new Produto2(nome,preco,quantidade);//Eu instancio o aqui para que eu obrigue o usuário a colocar um valor nos atributos.
         
         System.out.println();
         System.out.println("Dados do produto: "+produto2.toString());
