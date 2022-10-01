@@ -4,7 +4,7 @@ public class Saque {
     
     public final int numeroConta;
     private String nomeTitular;
-    private double deposito;
+    public double deposito;
     public double saque;
     
     public Saque(int getNumeroConta, String setNomeTitular){
@@ -21,10 +21,6 @@ public class Saque {
 
     public int getNumeroConta(){
         return numeroConta;
-    }
-
-    public double getDeposito() {
-        return deposito;
     }
     
     public void depositoInicial(double deposito){
