@@ -15,6 +15,7 @@ public class Saque {
     public void setNomeTitular(String nomeTitular){
         this.nomeTitular = nomeTitular;
     }
+    
     public String getNometitular(){
         return nomeTitular;
     }
