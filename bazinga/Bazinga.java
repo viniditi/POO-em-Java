@@ -31,74 +31,99 @@ public class Bazinga {
             System.out.println("");
             if (getAle == 0 && guarda == 1) {
                 System.out.println("De novo");
+                System.out.println("");
             } else if (getAle == 1 && guarda == 2) {
                 System.out.println("De novo");
+                System.out.println("");
             } else if (getAle == 2 && guarda == 3) {
                 System.out.println("De novo");
+                System.out.println("");
             } else if (getAle == 3 && guarda == 4) {
                 System.out.println("De novo");
+                System.out.println("");
             } else if (getAle == 4 && guarda == 5) {
                 System.out.println("De novo");
+                System.out.println("");
             } else if (getAle == 0 && guarda == 4) {
                 System.out.println("Pedra esmaga lagarto");
                 System.out.println("Raj Trapaceou!");
+                System.out.println("");
             } else if (getAle == 0 && guarda == 3) {
                 System.out.println("Pedra esmaga Tesoura");
                 System.out.println("Raj Trapaceou!");
+                System.out.println("");
             } else if (getAle == 1 && guarda == 1) {
                 System.out.println("Papel cobre a Pedra");
                 System.out.println("Raj Trapaceou");
+                System.out.println("");
             } else if (getAle == 2 && guarda == 3) {
                 System.out.println("Tesoura corta Papel");
                 System.out.println("Raj Trapaceou");
+                System.out.println("");
             } else if (getAle == 3 && guarda == 5) {
                 System.out.println("Veneno do Lagarto mata Spock");
                 System.out.println("Raj Trapaceou!");
+                System.out.println("");
             } else if (getAle == 4 && guarda == 3) {
                 System.out.println("Spock esmaga Tesouras");
                 System.out.println("Raj Trapaceou");
+                System.out.println("");
             } else if (getAle == 2 && guarda == 4) {
                 System.out.println("Tesoura decapita Lagarto");
                 System.out.println("Raj Trapaceou");
+                System.out.println("");
             } else if (getAle == 3 && guarda == 2) {
                 System.out.println("Lagarto come Papel");
                 System.out.println("Raj Trapaceou");
+                System.out.println("");
             } else if (getAle == 1 && guarda == 5) {
                 System.out.println("Papel refuta Spock");
                 System.out.println("Raj Trapaceou");
+                System.out.println("");
             } else if (getAle == 4 && guarda == 1) {
                 System.out.println("Spock vaporiza a Pedra");
                 System.out.println("Raj Trapaceou");
+                System.out.println("");
             } else if (getAle == 1 && guarda == 3) {
                 System.out.println("Tesoura corta Papel");
                 System.out.println("BAZINGA!");
+                System.out.println("");
             } else if (getAle == 1 && guarda == 1) {
                 System.out.println("Papel cobre Pedra");
                 System.out.println("BAZINGA!");
+                System.out.println("");
             } else if (getAle == 0 && guarda == 4) {
                 System.out.println("Pedra esmaga Lagarto");
                 System.out.println("BAZINGA!");
+                System.out.println("");
             } else if (getAle == 4 && guarda == 4) {
                 System.out.println("Lagarto envenena o Spock");
                 System.out.println("BAZINGA!");
+                System.out.println("");
             } else if (getAle == 2 && guarda == 5) {
                 System.out.println("Spock esmaga Tesouras ");
                 System.out.println("BAZINGA!");
+                System.out.println("");
             } else if (getAle == 3 && guarda == 3) {
                 System.out.println("Tesoura decapita Lagarto");
                 System.out.println("BAZINGA!");
+                System.out.println("");
             } else if (getAle == 1 && guarda == 4) {
                 System.out.println("Lagarto come Papel");
                 System.out.println("BAZINGA!");
+                System.out.println("");
             } else if (getAle == 4 && guarda == 2) {
                 System.out.println("Papel refuta Spock");
                 System.out.println("BAZINGA!");
+                System.out.println("");
             } else if (getAle == 0 && guarda == 5) {
                 System.out.println("Spock vaporiza a Pedra");
                 System.out.println("BAZINGA!");
+                System.out.println("");
             } else if (getAle == 2 && guarda == 1) {
                 System.out.println("Pedra esmaga tesoura");
                 System.out.println("BAZINGA!");
+                System.out.println("");
             }
         }
         else
