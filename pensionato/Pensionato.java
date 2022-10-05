@@ -33,8 +33,6 @@ public class Pensionato {
             if(vetor[i] != null)
                 System.out.println(i+": "+vetor[i]);
         }
-        
-        
         sc.close();
     }
     

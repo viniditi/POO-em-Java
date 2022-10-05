@@ -31,18 +31,4 @@ public class QuartosdoPensionato {
     public String toString() {
         return nome+ ", " + email;
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }
