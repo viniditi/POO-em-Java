@@ -11,7 +11,7 @@ public class Vetores {
         Scanner sc = new Scanner(System.in);
         Locale.setDefault(Locale.US);
         
-        /*System.out.print("Digite a quantidade de números que deseja digitar: ");
+        System.out.print("Digite a quantidade de números que deseja digitar: ");
         int a = sc.nextInt();
         
         int[] vetor = new int[a];
@@ -27,43 +27,43 @@ public class Vetores {
             if(vetor[i]<0){
                 System.out.println(vetor[i]);
             }
-        }*/
+        }
         
-        /*System.out.print("Digite quantos número você vai digitar: ");
+        System.out.print("Digite quantos número você vai digitar: ");
         int b = sc.nextInt();
         
-        double[] vetor2 = new double[b];
+        double[] vetor1 = new double[b];
         
-        for (int i=0;i<vetor2.length;i++){
+        for (int i=0;i<vetor1.length;i++){
             System.out.print("Digite um número: ");
-            vetor[i] = sc.nextDouble();
+            vetor1[i] = sc.nextDouble();
         }
         
         System.out.print("\nValores:");
         
-        for (int i=0;i<vetor2.length;i++){
+        for (int i=0;i<vetor1.length;i++){
             System.out.print(" "+vetor[i]);
         }
         
         System.out.println("");
         
         double soma=0;
-        for (int i=0;i<vetor2.length;i++){
+        for (int i=0;i<vetor1.length;i++){
             soma+=vetor[i];
         }
         
-        double med = soma/vetor2.length;
+        double med = soma/vetor1.length;
         
         System.out.println("Soma: "+soma);
-        System.out.println("Média: "+med);*/
+        System.out.println("Média: "+med);
         
-        /*System.out.print("Digite o a quantidade de pessoas: ");
+        System.out.print("Digite o a quantidade de pessoas: ");
         int c = sc.nextInt();
 
         
         ClasseVetorial[] vetor2 = new ClasseVetorial[c];
         
-        double soma=0.0;
+        double soma5=0.0;
         for (int i=0;i<vetor2.length;i++){
             System.out.printf("\nDados da %dª pessoa: %n",i+1);
             System.out.print("Nome: ");
@@ -88,16 +88,16 @@ public class Vetores {
         }
         
         double percentualMenores= ((double)menos16/c)*100.0;
-        System.out.printf("\nAltura média: %.2f%n",soma);
+        System.out.printf("\nAltura média: %.2f%n",soma5);
         System.out.printf("Pessoas com menos de 16 anos: %.1f%%\n",percentualMenores);
         
         for (int i=0;i<vetor2.length;i++){
             if(vetor2[i].idade<16){
                 System.out.printf("%s%n",vetor2[i].nome);
             }
-        }*/
+        }
         
-        /*System.out.print("Digite a quantidade de números: ");
+        System.out.print("Digite a quantidade de números: ");
         int d = sc.nextInt();
         
         int[] vetor3 = new int[d];
@@ -118,9 +118,9 @@ public class Vetores {
             }
         }
         
-        System.out.println("\nQuantidade de números pares: "+soma1);*/
+        System.out.println("\nQuantidade de números pares: "+soma1);
         
-        /*System.out.print("Digite o tamanho do vetor: ");
+        System.out.print("Digite o tamanho do vetor: ");
         int e = sc.nextInt();
         
         double[] vetor4 = new double[e];
@@ -141,7 +141,7 @@ public class Vetores {
         }
         
         System.out.printf("\nMaior valor: %.1f%n",max);
-        System.out.println("Posição do maior valor: "+posmaior);*/
+        System.out.println("Posição do maior valor: "+posmaior);
         
         System.out.print("Digite o tamanho dos vetores: ");
         int f = sc.nextInt();
