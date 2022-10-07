@@ -11,6 +11,8 @@ public class Vetores {
         Scanner sc = new Scanner(System.in);
         Locale.setDefault(Locale.US);
         
+        //Exercício 01
+        
         System.out.print("Digite a quantidade de números que deseja digitar: ");
         int a = sc.nextInt();
         
@@ -28,6 +30,8 @@ public class Vetores {
                 System.out.println(vetor[i]);
             }
         }
+        
+        //Exercício 02
         
         System.out.print("Digite quantos número você vai digitar: ");
         int b = sc.nextInt();
@@ -56,6 +60,8 @@ public class Vetores {
         
         System.out.println("Soma: "+soma);
         System.out.println("Média: "+med);
+        
+        //Exercício 03
         
         System.out.print("Digite o a quantidade de pessoas: ");
         int c = sc.nextInt();
@@ -97,6 +103,8 @@ public class Vetores {
             }
         }
         
+        //Exercício 04
+        
         System.out.print("Digite a quantidade de números: ");
         int d = sc.nextInt();
         
@@ -120,6 +128,8 @@ public class Vetores {
         
         System.out.println("\nQuantidade de números pares: "+soma1);
         
+        //Exercício 05
+        
         System.out.print("Digite o tamanho do vetor: ");
         int e = sc.nextInt();
         
@@ -142,6 +152,8 @@ public class Vetores {
         
         System.out.printf("\nMaior valor: %.1f%n",max);
         System.out.println("Posição do maior valor: "+posmaior);
+        
+        //Exercício 06
         
         System.out.print("Digite o tamanho dos vetores: ");
         int f = sc.nextInt();
