@@ -32,7 +32,7 @@ public class Matriz {
             }
         }
         
-        System.out.println("\nNùmero negativos: "+cont);
+        System.out.println("\nNúmero negativos: "+cont);
         
         sc.close();
     }
