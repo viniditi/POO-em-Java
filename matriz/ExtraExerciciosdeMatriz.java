@@ -9,8 +9,10 @@ public class ExtraExerciciosdeMatriz {
 
         Scanner sc = new Scanner(System.in);
         Random random = new Random();
-
-        /*int[][] mat = new int[4][4];
+        
+        //Exercício 01
+        
+        int[][] mat = new int[4][4];
 
         for (int i = 0; i < mat.length; i++) {
             for (int j = 0; j < mat[i].length; j++) {
@@ -41,11 +43,11 @@ public class ExtraExerciciosdeMatriz {
         
         System.out.println("\nMaior valor: "+maior);
         System.out.println("Linha: "+lin);
-        System.out.println("Coluna: "+col);*/
-        
+        System.out.println("Coluna: "+col);
+
         //Exercício 02
         
-        /*int[][] mat1 = new int[10][10];
+        int[][] mat1 = new int[10][10];
         
         for (int i = 0; i < mat1.length; i++) {
             for (int j = 0; j < mat1[i].length; j++) {
@@ -86,35 +88,114 @@ public class ExtraExerciciosdeMatriz {
             }
         }
         
-        System.out.println("Maior valor da coluna 7: " + maior7 + ", Menor: " + menor7);*/
-
+        System.out.println("Maior valor da coluna 7: " + maior7 + ", Menor: " + menor7);
+        
         //Exercício 03
         
         int[][] mat2 = new int[3][3];
-        
-        for(int i=0;i<mat2.length;i++){
-            for(int j=0;j<mat2[i].length;j++){
+
+        for (int i = 0; i < mat2.length; i++) {
+            for (int j = 0; j < mat2[i].length; j++) {
                 mat2[i][j] = sc.nextInt();
             }
         }
-        
-        int quantiPar =0;
-        int quantiImpar =0;
-        
-        for(int i=0;i<mat2.length;i++){
-            for(int j=0;j<mat2[i].length;j++){
-                if(mat2[i][j]%2 == 0){
+
+        int quantiPar = 0;
+        int quantiImpar = 0;
+
+        for (int i = 0; i < mat2.length; i++) {
+            for (int j = 0; j < mat2[i].length; j++) {
+                if (mat2[i][j] % 2 == 0) {
                     quantiPar++;
-                }
-                else{
+                } else {
                     quantiImpar++;
                 }
             }
         }
+
+        System.out.println("Pares: " + quantiPar);
+        System.out.println("Impares: " + quantiImpar);
+
+        //Exercício 04
         
-        System.out.println("Pares: "+quantiPar);
-        System.out.println("Impares: "+quantiImpar);
-        
+        String[][] mat4 = new String[31][24];
+
+        boolean sair = false;
+
+        while (!sair) {
+            
+            System.out.println("\nDigite 1 para adicionar um compromisso.");
+            System.out.println("Digite 2 para verificar os compromissos.");
+            System.out.println("Digite 0 para sair.\n");
+            
+            byte opcao = sc.nextByte();
+            
+            if(opcao == 1){
+                
+                boolean diaValido = false;
+                int dia =0;
+                while(!diaValido){
+                    System.out.print("Entre com o dia do mês: ");
+                    dia = sc.nextInt();
+                    if(dia > 0 && dia<=31){
+                        diaValido = true;
+                    }
+                    else{
+                        System.out.println("Dia inválido, digite novamente");
+                    }
+                }
+                boolean horaValido = false;
+                int hora = 0;
+                while(!horaValido){
+                    System.out.print("Entre com o a hora: ");
+                    hora = sc.nextInt();
+                    if(hora > 0 && hora<=24){
+                        horaValido = true;
+                    }
+                    else{
+                        System.out.println("Dia inválido, digite novamente");
+                    }
+                    System.out.print("Digite o compromisso: ");
+                }
+                    mat4[--dia][hora] = sc.next();
+            }
+            else if(opcao ==2){
+                boolean diaValido = false;
+                int dia =0;
+                while(!diaValido){
+                    System.out.print("Entre com o dia do mês: ");
+                    dia = sc.nextInt();
+                    if(dia > 0 && dia<=31){
+                        diaValido = true;
+                    }
+                    else{
+                        System.out.println("Dia inválido, digite novamente");
+                    }
+                }
+                
+                boolean horaValido = false;
+                int hora = 0;
+                while(!horaValido){
+                    System.out.print("Entre com o a hora: ");
+                    hora = sc.nextInt();
+                    if(hora > 0 && hora<=24){
+                        horaValido = true;
+                    }
+                    else{
+                        System.out.println("Dia inválido, digite novamente");
+                    }
+                }
+                System.out.print("Compromisso agendado: ");
+                System.out.println(mat4[--dia][hora]);
+            }
+            else if(opcao ==0){
+                sair = true;
+            }
+            else{
+                System.out.println("Opção inválida, digite novamente");
+            }
+        }
+
         sc.close();
     }
 
