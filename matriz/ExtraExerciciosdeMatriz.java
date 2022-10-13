@@ -195,6 +195,110 @@ public class ExtraExerciciosdeMatriz {
                 System.out.println("Opção inválida, digite novamente");
             }
         }
+        
+        //Exercício 05
+        
+        String[][][] mat5 = new String[12][31][24];
+
+        boolean sair = false;
+
+        while (!sair) {
+            
+            System.out.println("\nDigite 1 para adicionar um compromisso.");
+            System.out.println("Digite 2 para verificar os compromissos.");
+            System.out.println("Digite 0 para sair.\n");
+            
+            byte opcao = sc.nextByte();
+            
+            if(opcao == 1){
+                
+                boolean mesValido = false;
+                int mes =0;
+                while(!mesValido){
+                    System.out.print("Entre com o mês: ");
+                    mes = sc.nextInt();
+                    if(mes > 0 && mes<=12){
+                        mesValido = true;
+                    }
+                    else{
+                        System.out.println("Mês inválido, digite novamente");
+                    }
+                }
+                boolean diaValido = false;
+                int dia =0;
+                while(!diaValido){
+                    System.out.print("Entre com o dia do mês: ");
+                    dia = sc.nextInt();
+                    if(dia > 0 && dia<=31){
+                        diaValido = true;
+                    }
+                    else{
+                        System.out.println("Dia inválido, digite novamente");
+                    }
+                }
+                boolean horaValido = false;
+                int hora = 0;
+                while(!horaValido){
+                    System.out.print("Entre com o a hora: ");
+                    hora = sc.nextInt();
+                    if(hora > 0 && hora<=8){
+                        horaValido = true;
+                    }
+                    else{
+                        System.out.println("Dia inválido, digite novamente");
+                    }
+                    System.out.print("Digite o compromisso: ");
+                }
+                mat5[--mes][--dia][hora] = sc.next();
+            }
+            else if(opcao ==2){
+                boolean mesValido = false;
+                int mes =0;
+                while(!mesValido){
+                    System.out.print("Entre com o mês: ");
+                    mes = sc.nextInt();
+                    if(mes > 0 && mes<=12){
+                        mesValido = true;
+                    }
+                    else{
+                        System.out.println("Mês inválido, digite novamente");
+                    }
+                }
+                boolean diaValido = false;
+                int dia =0;
+                while(!diaValido){
+                    System.out.print("Entre com o dia do mês: ");
+                    dia = sc.nextInt();
+                    if(dia > 0 && dia<=31){
+                        diaValido = true;
+                    }
+                    else{
+                        System.out.println("Dia inválido, digite novamente");
+                    }
+                }
+                
+                boolean horaValido = false;
+                int hora = 0;
+                while(!horaValido){
+                    System.out.print("Entre com o a hora: ");
+                    hora = sc.nextInt();
+                    if(hora > 0 && hora<=8){
+                        horaValido = true;
+                    }
+                    else{
+                        System.out.println("Dia inválido, digite novamente");
+                    }
+                }
+                System.out.print("Compromisso agendado: ");
+                System.out.println(mat5[--mes][--dia][hora]);
+            }
+            else if(opcao ==0){
+                sair = true;
+            }
+            else{
+                System.out.println("Opção inválida, digite novamente");
+            }
+        }
 
         sc.close();
     }
