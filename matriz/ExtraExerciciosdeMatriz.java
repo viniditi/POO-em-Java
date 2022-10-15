@@ -200,9 +200,9 @@ public class ExtraExerciciosdeMatriz {
         
         String[][][] mat5 = new String[12][31][24];
 
-        boolean sair = false;
+        boolean sair1 = false;
 
-        while (!sair) {
+        while (!sair1) {
             
             System.out.println("\nDigite 1 para adicionar um compromisso.");
             System.out.println("Digite 2 para verificar os compromissos.");
@@ -293,7 +293,7 @@ public class ExtraExerciciosdeMatriz {
                 System.out.println(mat5[--mes][--dia][hora]);
             }
             else if(opcao ==0){
-                sair = true;
+                sair1 = true;
             }
             else{
                 System.out.println("Opção inválida, digite novamente");
