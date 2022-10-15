@@ -10,6 +10,9 @@ public class DataHora {
 
     public static void main(String[] args) {
         
+        //https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html
+        //Todos os fotmatos no site acima.
+        
         DateTimeFormatter fmt1 = DateTimeFormatter.ofPattern("dd/MM/yyyy");//Eu indico como o programa deve mostrar a data customizada na impressão.
         DateTimeFormatter fmt2 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
         
