@@ -6,6 +6,8 @@ import java.time.LocalDateTime;
 import java.time.Month;
 import java.time.format.DateTimeFormatter;
 
+import java.time.ZoneId;
+
 public class DataHora {
 
     public static void main(String[] args) {
@@ -30,6 +32,18 @@ public class DataHora {
        LocalDateTime d12 = LocalDateTime.of(2022, 7, 20, 1, 30);//Esse mostra ano,mês,dia,hora,minuto respectivamente.
        
        
+       LocalDate d13 = LocalDate.parse("2022-07-21");
+       LocalDateTime d14 = LocalDateTime.parse("2022-07-21T01:30:26");
+       Instant d15 = Instant.parse("2022-07-21T01:30:26Z");
+       
+       
+       DateTimeFormatter fmt3 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+       DateTimeFormatter fmt4 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");//Chama a Hora com os minutos.
+       DateTimeFormatter fmt5 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm").withZone(ZoneId.systemDefault());//Uso esse padrão para mostrar o fuso Horário do sistema local do computador que está rodando o programa. 
+       //Porém o instant não tem o método format, por isso eu adiociono o '.withZone(ZoneId.systemDefault()'.
+       DateTimeFormatter fmt6 = DateTimeFormatter.ISO_DATE_TIME;
+       DateTimeFormatter fmt7 = DateTimeFormatter.ISO_INSTANT;//Eu chamo assim para mostrar o fuso Horário no formato ISO.
+       
         System.out.println("d01: "+d01);
         System.out.println("d02: "+d02);
         System.out.println("d03: "+d03.toString());//O .toString adiciona a Data-Hora no formato ISO. OBS: Eu posso adicionar o .toString em todas as Data-Hora.
@@ -42,6 +56,21 @@ public class DataHora {
         System.out.println("d10: "+d10);
         System.out.println("d11: "+d11);
         System.out.println("d12: "+d12);
+        
+        //Parte 02
+        
+        System.out.println();
+        System.out.println("d13: "+d13.format(fmt3));//Eu formato para aparecer da maneira que eu escrevi no DateTimeFormatter, que nesse caso foi usando '/' para separar.
+        System.out.println("d13: "+fmt3.format(d13));//Faz a mesma coisa que o de cima.
+        System.out.println("d13: "+d13.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));//Tem como chamar o formato por inteiro também.       
+        System.out.println("d14: "+d14.format(fmt3));
+        System.out.println("d14: "+d14.format(fmt2));
+        System.out.println("d15: "+fmt5.format(d15));//Eu chamo o instant assim. Eu eu estou chamando a data equivalente de São Paulo, com o fuso Horário.
+        System.out.println("d14: "+d14.format(fmt6));
+        System.out.println("d15: "+fmt7.format(d15));
+        System.out.println("d15: "+d15.toString());//Mostra do mesmo jeito.
+        
+        
         
         
     }
