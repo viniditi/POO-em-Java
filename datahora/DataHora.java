@@ -6,6 +6,8 @@ import java.time.LocalDateTime;
 import java.time.Month;
 import java.time.format.DateTimeFormatter;
 
+//Parte 02
+
 import java.time.ZoneId;
 
 public class DataHora {
@@ -14,6 +16,8 @@ public class DataHora {
         
         //https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html
         //Todos os fotmatos no site acima.
+        
+        //Parte 01
         
         DateTimeFormatter fmt1 = DateTimeFormatter.ofPattern("dd/MM/yyyy");//Eu indico como o programa deve mostrar a data customizada na impressão.
         DateTimeFormatter fmt2 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
@@ -31,6 +35,7 @@ public class DataHora {
        LocalDate d11 = LocalDate.of(2022, 7, 20);//Esse .of aceita ano, mês e dia respectivamente.
        LocalDateTime d12 = LocalDateTime.of(2022, 7, 20, 1, 30);//Esse mostra ano,mês,dia,hora,minuto respectivamente.
        
+       //Parte 02
        
        LocalDate d13 = LocalDate.parse("2022-07-21");
        LocalDateTime d14 = LocalDateTime.parse("2022-07-21T01:30:26");
@@ -43,6 +48,8 @@ public class DataHora {
        //Porém o instant não tem o método format, por isso eu adiociono o '.withZone(ZoneId.systemDefault()'.
        DateTimeFormatter fmt6 = DateTimeFormatter.ISO_DATE_TIME;
        DateTimeFormatter fmt7 = DateTimeFormatter.ISO_INSTANT;//Eu chamo assim para mostrar o fuso Horário no formato ISO.
+       
+       //Parte 01
        
         System.out.println("d01: "+d01);
         System.out.println("d02: "+d02);
@@ -69,9 +76,6 @@ public class DataHora {
         System.out.println("d14: "+d14.format(fmt6));
         System.out.println("d15: "+fmt7.format(d15));
         System.out.println("d15: "+d15.toString());//Mostra do mesmo jeito.
-        
-        
-        
         
     }
     
