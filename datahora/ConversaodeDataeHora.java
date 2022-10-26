@@ -3,10 +3,7 @@ package pooemjava.datahora;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.LocalTime;
-import java.time.Month;
 import java.time.ZoneId;
-import java.time.format.DateTimeFormatter;
 
 public class ConversaodeDataeHora {
 
