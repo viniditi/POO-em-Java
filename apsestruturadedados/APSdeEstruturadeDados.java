@@ -90,39 +90,25 @@ public class APSdeEstruturadeDados {
                         System.out.println();
                     }
 
-                    if ((jogo[0][0] == 'X' && jogo[0][1] == 'X' && jogo[0][2] == 'X')
-                            || //linha 1
-                            (jogo[1][0] == 'X' && jogo[1][1] == 'X' && jogo[1][2] == 'X')
-                            || //linha 2
-                            (jogo[2][0] == 'X' && jogo[2][1] == 'X' && jogo[2][2] == 'X')
-                            || //linha 3
-                            (jogo[0][0] == 'X' && jogo[1][0] == 'X' && jogo[2][0] == 'X')
-                            || //coluna 1
-                            (jogo[0][1] == 'X' && jogo[1][1] == 'X' && jogo[2][1] == 'X')
-                            || //coluna 2
-                            (jogo[0][2] == 'X' && jogo[1][2] == 'X' && jogo[2][2] == 'X')
-                            || //coluna 3
-                            (jogo[0][0] == 'X' && jogo[1][1] == 'X' && jogo[2][2] == 'X')
-                            || //diagonal direita para esquerda.
+                    if ((jogo[0][0] == 'X' && jogo[0][1] == 'X' && jogo[0][2] == 'X')     || //linha 1
+                            (jogo[1][0] == 'X' && jogo[1][1] == 'X' && jogo[1][2] == 'X') || //linha 2
+                            (jogo[2][0] == 'X' && jogo[2][1] == 'X' && jogo[2][2] == 'X') || //linha 3
+                            (jogo[0][0] == 'X' && jogo[1][0] == 'X' && jogo[2][0] == 'X') || //coluna 1
+                            (jogo[0][1] == 'X' && jogo[1][1] == 'X' && jogo[2][1] == 'X') || //coluna 2
+                            (jogo[0][2] == 'X' && jogo[1][2] == 'X' && jogo[2][2] == 'X') || //coluna 3
+                            (jogo[0][0] == 'X' && jogo[1][1] == 'X' && jogo[2][2] == 'X') || //diagonal direita para esquerda.
                             (jogo[0][2] == 'X' && jogo[1][1] == 'X' && jogo[2][0] == 'X')) {  //diagonal esquerda para direita
                         System.out.println("\nParabéns, jogador 1 ganhou!\n");
                         ganhou = true;
                         placar[0]++;
 
-                    } else if ((jogo[0][0] == 'O' && jogo[0][1] == 'O' && jogo[0][2] == 'O')
-                            || //linha 1
-                            (jogo[1][0] == 'O' && jogo[1][1] == 'O' && jogo[1][2] == 'O')
-                            || //linha 2
-                            (jogo[2][0] == 'O' && jogo[2][1] == 'O' && jogo[2][2] == 'O')
-                            || //linha 3
-                            (jogo[0][0] == 'O' && jogo[1][0] == 'O' && jogo[2][0] == 'O')
-                            || //coluna 1
-                            (jogo[0][1] == 'O' && jogo[1][1] == 'O' && jogo[2][1] == 'O')
-                            || //coluna 2
-                            (jogo[0][2] == 'O' && jogo[1][2] == 'O' && jogo[2][2] == 'O')
-                            || //coluna 3
-                            (jogo[0][0] == 'O' && jogo[1][1] == 'O' && jogo[2][2] == 'O')
-                            || //diagonal direita para esquerda.
+                    } else if ((jogo[0][0] == 'O' && jogo[0][1] == 'O' && jogo[0][2] == 'O') || //linha 1
+                            (jogo[1][0] == 'O' && jogo[1][1] == 'O' && jogo[1][2] == 'O')    || //linha 2
+                            (jogo[2][0] == 'O' && jogo[2][1] == 'O' && jogo[2][2] == 'O')    || //linha 3
+                            (jogo[0][0] == 'O' && jogo[1][0] == 'O' && jogo[2][0] == 'O')    || //coluna 1
+                            (jogo[0][1] == 'O' && jogo[1][1] == 'O' && jogo[2][1] == 'O')    || //coluna 2
+                            (jogo[0][2] == 'O' && jogo[1][2] == 'O' && jogo[2][2] == 'O')    || //coluna 3
+                            (jogo[0][0] == 'O' && jogo[1][1] == 'O' && jogo[2][2] == 'O')    || //diagonal direita para esquerda.
                             (jogo[0][2] == 'O' && jogo[1][1] == 'O' && jogo[2][0] == 'O')) {  //diagonal esquerda para direita
 
                         placar[1]++;
