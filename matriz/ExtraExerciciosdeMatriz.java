@@ -10,7 +10,7 @@ public class ExtraExerciciosdeMatriz {
         Scanner sc = new Scanner(System.in);
         Random random = new Random();
 
-        //Exercício 01
+        //Exercício 01.
         
         int[][] mat = new int[4][4];
 
@@ -45,7 +45,7 @@ public class ExtraExerciciosdeMatriz {
         System.out.println("Linha: "+lin);
         System.out.println("Coluna: "+col);
 
-        //Exercício 02
+        //Exercício 02.
         
         int[][] mat1 = new int[10][10];
         
@@ -90,7 +90,7 @@ public class ExtraExerciciosdeMatriz {
         
         System.out.println("Maior valor da coluna 7: " + maior7 + ", Menor: " + menor7);
         
-        //Exercício 03
+        //Exercício 03.
         
         int[][] mat2 = new int[3][3];
 
@@ -116,7 +116,7 @@ public class ExtraExerciciosdeMatriz {
         System.out.println("Pares: " + quantiPar);
         System.out.println("Impares: " + quantiImpar);
 
-        //Exercício 04
+        //Exercício 04.
         
         String[][] mat4 = new String[31][24];
 
@@ -196,7 +196,7 @@ public class ExtraExerciciosdeMatriz {
             }
         }
         
-        //Exercício 05
+        //Exercício 05.
         
         String[][][] mat5 = new String[12][31][24];
 
@@ -300,7 +300,7 @@ public class ExtraExerciciosdeMatriz {
             }
         }
         
-        //Exercício 06
+        //Exercício 06.
         
         char[][] jogo = new char[3][3];
         
